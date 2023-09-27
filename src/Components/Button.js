@@ -7,10 +7,10 @@ const SIZE_STYLE = {
 };
 
 const TYPE_STYLE = {
-    error: 'bg-error-light hover:bg-error-dark',
-    warning: 'bg-yellow-400 hover:bg-yellow-500',
+    error: 'bg-warning-light hover:bg-warning-dark',
+    warning: 'bg-alert-light hover:bg-alert-500',
     success: 'bg-green-400 hover:bg-green-500',
-    info: 'bg-primary-light hover:bg-blue-300',
+    info: 'bg-primary-100 hover:bg-primary-200',
 };
 
 const STATUS_STYLE = {

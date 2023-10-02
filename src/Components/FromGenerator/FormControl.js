@@ -5,19 +5,24 @@ import MuiFormControl from '@mui/material/FormControl';
 import FormLabel from './FormLabel';
 import FormHelperText from './FormHelperText';
 
-const DISABLE_STYLE = 'opacity-50';
-const ROOT_STYLE = 'text-white w-full p-1 flex gap-3 normal-case';
+const classes = {
+  root: 'text-white w-full p-1 flex gap-3 normal-case',
+  disable: 'opacity-50',
+  hidden: 'hidden',
+}
 
 export default function FormControl(props) {
   const { disable, hidden, required, label, helperText, errorText, error, children, className, ...others } = props;
-  const finalClasses = `${ROOT_STYLE} ${disable && DISABLE_STYLE} ${className}`
+
   return (
     <MuiFormControl
       disabled={disable}
-      hidden={hidden}
       required={required}
       error={error}
-      className={finalClasses}
+      className={className}
+      classes={{
+        root: `${classes.root} ${disable && classes.disable} ${hidden && classes.hidden}`,
+      }}
       {...others}
     >
       {label && <FormLabel required={required} error={error} disable={disable}>{label}</FormLabel>}

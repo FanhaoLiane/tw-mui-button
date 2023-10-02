@@ -9,7 +9,6 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        dark: 'rgba(21, 25, 51, 1)',
         primary: {
           100: 'rgba(108, 169, 251, 1)',
           200: 'rgba(126, 161, 214, 1)',
@@ -33,6 +32,9 @@ module.exports = {
       },
       zIndex: {
         100: 100,
+      },
+      boxShadow: {
+        input: '0px 4px 4px rgba(0, 0, 0, 0.25), 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 0px 0px 4px rgba(126, 161, 214, 0.3)',
       }
     },
   },

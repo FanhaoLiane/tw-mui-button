@@ -24,7 +24,7 @@ function AppContent() {
   return (
     <StyledEngineProvider injectFirst>
       <CssBaseline />
-      <AppBar className="bg-primary-10 py-3" position="fixed" open={open}>
+      <AppBar className="bg-primary-800 py-3" position="fixed" open={open}>
         <Toolbar className="min-h-[29px]">
           <IconButton
             color="inherit"

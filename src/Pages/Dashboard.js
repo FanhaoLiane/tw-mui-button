@@ -22,7 +22,7 @@ export default function Dashboard(props) {
     };
 
     return (
-        <div className='p-4 pt-[80px] bg-dark w-full h-full flex gap-5 flex-col'>
+        <div className='p-4 pt-[80px] bg-primary-900 w-full h-full flex gap-5 flex-col'>
             <p className='text-white'>
                 Button style example {t('hello')}
             </p>
